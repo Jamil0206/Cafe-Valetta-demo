@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Browse Cafe Valetta's digital table menu. Artisan coffee, signature scones, and fresh local breakfast dishes in Toowoomba's historic summer residence.">
   <title>Cafe Valetta | Digital Table Menu</title>
-  
+
   <!-- Styles & Fonts -->
   <link rel="stylesheet" href="./src/index.css">
-  
-  <!-- JSON-LD Structured Data for Local Restaurant Menu SEO -->
+
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -27,7 +27,8 @@
         "addressCountry": "AU"
       },
       "menu": "https://cafe-valetta.square.site",
-      "servesCuisine": ["Australian", "High Tea", "Artisan Coffee"]
+      "servesCuisine": ["Australian", "High Tea", "Artisan Coffee"],
+      "openingHours": ["Mo-Sa 07:30-14:30"]
     }
   </script>
 </head>
@@ -35,7 +36,7 @@
 
   <!-- Top Table Info Banner -->
   <div class="announcement-bar table-banner" id="announcement-bar">
-    <p>✨ Welcome to Cafe Valetta. Order at the counter or with your server. ✨</p>
+    <p>Welcome to Cafe Valetta &mdash; Order at the counter or with your server</p>
   </div>
 
   <!-- Sticky Mobile Header -->
@@ -49,33 +50,57 @@
   </header>
 
   <main class="qr-menu-main">
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero-section" aria-label="Cafe Valetta gardens">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-badge">Est. 1911</div>
+        <h2 class="hero-title">Historic Cottage<br>Dining</h2>
+        <p class="hero-subtitle">Toowoomba&rsquo;s beloved heritage café &mdash; artisan coffee, seasonal breakfasts &amp; High Tea</p>
+        <div class="hero-divider" aria-hidden="true"></div>
+        <p class="hero-location">96 Margaret St, Toowoomba City QLD</p>
+      </div>
+    </section>
+
     <div class="container qr-container">
-      
-      <!-- Welcome Instruction Card -->
-      <section class="welcome-section reveal-on-scroll active">
-        <div class="welcome-card">
-          <p>Please browse our selection of seasonal hot drinks, iced treats, breakfasts, and home-baked pastries. Select any item to view photos and full descriptions.</p>
+
+      <!-- High Tea Feature Banner -->
+      <section class="high-tea-banner reveal-on-scroll" id="high-tea-banner" aria-label="High Tea at Cafe Valetta">
+        <div class="high-tea-overlay"></div>
+        <div class="high-tea-content">
+          <span class="high-tea-eyebrow">Available by Booking</span>
+          <h3 class="high-tea-title">Afternoon High Tea</h3>
+          <p class="high-tea-desc">Freshly baked scones, house cakes &amp; loose-leaf teas served in our heritage cottage gardens</p>
+          <a href="tel:+61746320332" class="high-tea-cta">Enquire &amp; Book &rarr;</a>
         </div>
       </section>
 
+      <!-- Decorative Divider -->
+      <div class="ornament-divider" aria-hidden="true">
+        <span class="ornament-line"></span>
+        <span class="ornament-dot"></span>
+        <span class="ornament-line"></span>
+      </div>
+
       <!-- Sticky Category Selector Bar -->
-      <section class="menu-nav-section">
+      <section class="menu-nav-section" aria-label="Menu categories">
         <div class="menu-category-container qr-nav-container">
-          <div class="menu-category-bar" id="menu-category-bar">
+          <div class="menu-category-bar" id="menu-category-bar" role="tablist" aria-label="Menu categories">
             <!-- Dynamically populated categories -->
           </div>
         </div>
       </section>
 
       <!-- Dietary Filters -->
-      <section class="filters-section">
+      <section class="filters-section" aria-label="Dietary filters">
         <div class="dietary-filter-bar qr-filter-bar" id="dietary-filter-bar">
           <span class="filter-label">Filter:</span>
-          <button class="dietary-btn" data-filter="V">
-            <span class="filter-dot"></span> Vegetarian (V)
+          <button class="dietary-btn" data-filter="V" aria-pressed="false">
+            <span class="filter-dot" aria-hidden="true"></span> Vegetarian
           </button>
-          <button class="dietary-btn" data-filter="DF">
-            <span class="filter-dot"></span> Dairy-Free (DF)
+          <button class="dietary-btn" data-filter="DF" aria-pressed="false">
+            <span class="filter-dot" aria-hidden="true"></span> Dairy-Free
           </button>
         </div>
       </section>
@@ -84,16 +109,16 @@
       <section class="catalog-section">
         <div class="category-title-banner" id="category-title-banner">
           <h2 id="active-category-title">Category Name</h2>
-          <p id="active-category-availability" class="category-availability">Available 7:30 am - 11:15 am</p>
+          <p id="active-category-availability" class="category-availability"></p>
         </div>
         <div class="menu-display-area" id="menu-display-area">
-          
+
           <!-- Signature Highlights -->
           <div class="signature-highlight-container" id="signature-highlight-container">
             <!-- Dynamically populated house signatures -->
           </div>
 
-          <!-- Dot-Leader List (1 Column for Mobile) -->
+          <!-- Dot-Leader List -->
           <div class="menu-grid qr-menu-grid" id="menu-grid">
             <!-- Dynamically populated general dishes -->
           </div>
@@ -105,49 +130,52 @@
   </main>
 
   <!-- Animated Text Marquee -->
-  <div class="marquee-container qr-marquee">
+  <div class="marquee-container qr-marquee" aria-hidden="true">
     <div class="marquee-content">
-      HISTORIC COTTAGE • HIGH TEA • RECREATIONAL GARDENS • ARTISAN COFFEE • EST. 1911 • HISTORIC COTTAGE • HIGH TEA • RECREATIONAL GARDENS • ARTISAN COFFEE • EST. 1911 •
+      HISTORIC COTTAGE &bull; HIGH TEA &bull; RECREATIONAL GARDENS &bull; ARTISAN COFFEE &bull; EST. 1911 &bull; TOOWOOMBA QLD &bull; HISTORIC COTTAGE &bull; HIGH TEA &bull; RECREATIONAL GARDENS &bull; ARTISAN COFFEE &bull; EST. 1911 &bull; TOOWOOMBA QLD &bull;
     </div>
   </div>
 
   <!-- Minimal Mobile Footer -->
   <footer class="site-footer qr-footer">
     <div class="container footer-content-qr">
-      <h3 class="serif-text">Cafe Valetta</h3>
-      <p class="qr-footer-desc">Historic Cottage Dining • Est. 1911</p>
-      
+      <h3 class="serif-text footer-cafe-name">Cafe Valetta</h3>
+      <p class="qr-footer-desc">Historic Cottage Dining &bull; Est. 1911</p>
+
       <div class="qr-footer-info">
-        <p><strong>Hours:</strong> Mon - Sat: 9:00 AM - 5:00 PM | Sun: Closed</p>
-        <p><strong>Address:</strong> 96 Margaret St, Toowoomba City</p>
-        <p><strong>Phone:</strong> <a href="tel:+61746320332">+61 7 4632 0332</a></p>
+        <p><strong>Hours:</strong> Mon &ndash; Fri: 7:30 am &ndash; 2:30 pm &nbsp;|&nbsp; Sat: 8:00 am &ndash; 2:30 pm &nbsp;|&nbsp; Sun: Closed</p>
+        <p><strong>Address:</strong> <a href="https://maps.google.com/?q=96+Margaret+St+Toowoomba" target="_blank" rel="noopener">96 Margaret St, Toowoomba City QLD 4350</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+61746320332">(07) 4632 0332</a></p>
       </div>
 
+      <p class="payment-accepted-label">Accepted Payments</p>
       <div class="payment-logos qr-pay-logos">
-        <img src="./src/assets/visa.svg" alt="Visa" class="pay-logo">
-        <img src="./src/assets/mastercard.svg" alt="Mastercard" class="pay-logo">
-        <img src="./src/assets/americanexpress.svg" alt="American Express" class="pay-logo">
-        <img src="./src/assets/applepay.svg" alt="Apple Pay" class="pay-logo">
-        <img src="./src/assets/googlepay.svg" alt="Google Pay" class="pay-logo">
+        <img src="" data-asset="visa" alt="Visa" class="pay-logo">
+        <img src="" data-asset="mastercard" alt="Mastercard" class="pay-logo">
+        <img src="" data-asset="amex" alt="American Express" class="pay-logo">
+        <img src="" data-asset="applepay" alt="Apple Pay" class="pay-logo">
+        <img src="" data-asset="googlepay" alt="Google Pay" class="pay-logo">
       </div>
-      
-      <p class="qr-copyright">&copy; 2026 Cafe Valetta. Table Menu Experience.</p>
+
+      <p class="qr-copyright">&copy; 2026 Cafe Valetta. All rights reserved.</p>
+      <p class="demo-badge">Concept Demo</p>
     </div>
   </footer>
 
   <!-- Dish Details Popup Modal -->
-  <div class="dish-modal" id="dish-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="dish-modal" id="dish-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description">
     <div class="dish-modal-content qr-modal-content">
-      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close details">&times;</button>
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dish details">&times;</button>
       <div class="modal-body qr-modal-body">
         <div class="modal-image-wrapper qr-modal-image-wrapper">
-          <img id="modal-image" src="" alt="Dish Detail">
+          <img id="modal-image" src="" alt="">
         </div>
         <div class="modal-info qr-modal-info">
           <span class="modal-category" id="modal-category">Breakfast</span>
           <h3 id="modal-title" class="serif-text">Dish Name</h3>
           <span class="modal-price" id="modal-price">$0.00</span>
-          <p id="modal-description">Detailed description here.</p>
+          <div class="modal-variants" id="modal-variants" style="display:none;"></div>
+          <p id="modal-description" class="modal-description">Detailed description here.</p>
           <div class="modal-dietary" id="modal-dietary">
             <!-- Dietary Badges -->
           </div>
