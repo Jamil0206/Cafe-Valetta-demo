@@ -1,0 +1,260 @@
+{
+  "categories": [
+    {
+      "id": "breakfast",
+      "name": "Breakfast",
+      "icon": "svg-breakfast",
+      "availability": "Available 7:30 am - 11:15 am",
+      "items": [
+        {
+          "name": "Eggs on Toast",
+          "price": "$17.50",
+          "description": "Eggs to your liking on toasted turkish bread.",
+          "dietary": ["V"]
+        },
+        {
+          "name": "Avocado on toast",
+          "price": "$19.90",
+          "description": "Roast tomato aioli, locally grown avocado, beetroot relish, whipped fetta, lemon wedge & house made dukkah on toasted sourdough.",
+          "dietary": ["V"]
+        },
+        {
+          "name": "Breakfast Croissant",
+          "price": "$25.50",
+          "description": "Butter croissant topped with smashed avocado, fresh spinach, bacon, free range poached egg, hash brown and house made hollandaise.",
+          "dietary": [],
+          "signature": true
+        },
+        {
+          "name": "Bacon & Eggs",
+          "price": "$26.50",
+          "description": "Bacon, slow roasted tomato, hash brown, toasted turkish bread and eggs to your liking.",
+          "dietary": []
+        },
+        {
+          "name": "Pancakes",
+          "price": "$25.50",
+          "description": "Buttermilk pancakes with salted caramel sauce, toasted coconut, brulee banana, macadamia and coconut crumb, strawberries and vanilla ice cream.",
+          "dietary": ["V"]
+        },
+        {
+          "name": "Corn Fritters",
+          "price": "$25.90",
+          "description": "Corn fritters served with bacon, poached egg, cherry tomato, avocado, feta and coriander salsa and tomato relish.",
+          "dietary": []
+        },
+        {
+          "name": "Eggs Valetta",
+          "price": "$25.90",
+          "description": "Slow roasted tomato, mushrooms, avocado, toasted turkish bread and poached eggs (V). *Please note - substituted with mushrooms during asparagus shortage.",
+          "dietary": ["V"]
+        },
+        {
+          "name": "Porridge",
+          "price": "$21.90",
+          "description": "Creamy coconut, cinnamon, barley & oats porridge topped with caramelised miso pear & apple compote, toasted walnuts, strawberries & vanilla bean mascarpone.",
+          "dietary": ["V", "DF"]
+        },
+        {
+          "name": "Eggs Benedict with Ham",
+          "price": "$18.50 - $26.50",
+          "description": "Served on toasted turkish bread with fresh shoulder ham and house made hollandaise.",
+          "dietary": []
+        },
+        {
+          "name": "Eggs Benedict with Bacon",
+          "price": "$18.50 - $26.50",
+          "description": "Served on toasted turkish bread with bacon and house made hollandaise.",
+          "dietary": []
+        },
+        {
+          "name": "Eggs Benedict with Smoked Salmon",
+          "price": "$20.00 - $28.90",
+          "description": "Served on toasted turkish bread with smoked salmon and house made hollandaise.",
+          "dietary": []
+        },
+        {
+          "name": "Baked Eggs",
+          "price": "$24.90",
+          "description": "House made chorizo and baked eggs hot pot topped with fried eggs, chilli oil, feta and toasted turkish bread.",
+          "dietary": []
+        },
+        {
+          "name": "Omelette",
+          "price": "$27.90",
+          "description": "Three egg omelette with spinach, ham, mushroom and feta served with toasted turkish bread.",
+          "dietary": []
+        },
+        {
+          "name": "Chilli Scrambled",
+          "price": "$22.90",
+          "description": "Free range scrambled eggs topped with house made chilli oil, grilled chorizo, feta and chilli threads on toasted sourdough.",
+          "dietary": []
+        },
+        {
+          "name": "Panna Cotta",
+          "price": "$23.50",
+          "description": "Chai panna cotta topped with pistachio nougat crumb served with house made oat, nut & puffed wheat granola, chai spiced coulis, caramelised apple, vanilla bean mascarpone, strawberries and almond tuile.",
+          "dietary": ["V"]
+        },
+        {
+          "name": "French Toast",
+          "price": "$25.90",
+          "description": "House made brioche french toast with maple syrup, berries, ice cream and bacon.",
+          "dietary": []
+        },
+        {
+          "name": "Fruit & Nut Loaf",
+          "price": "$11.90",
+          "description": "One slice of toasted fruit and nut loaf with vanilla poached pears and whipped lemon curd.",
+          "dietary": ["V"]
+        },
+        {
+          "name": "Ham & Cheese Toastie",
+          "price": "$20.50",
+          "description": "Shaved ham, cheese & tomato on toasted turkish bread.",
+          "dietary": []
+        },
+        {
+          "name": "Toasted Croissant",
+          "price": "$11.50",
+          "description": "Freshly toasted croissant served with jam and butter curls.",
+          "dietary": ["V"]
+        }
+      ]
+    },
+    {
+      "id": "morning-tea",
+      "name": "Morning Tea",
+      "icon": "svg-tea",
+      "availability": "Available All Day",
+      "items": [
+        {
+          "name": "House made cakes",
+          "price": "$10.50 - $11.50",
+          "description": "Please select a cake from our visual display cabinet - all cakes are served with fresh cream.",
+          "dietary": ["V"]
+        },
+        {
+          "name": "Banana Bread",
+          "price": "$9.00",
+          "description": "House made banana bread warmed with butter curls.",
+          "dietary": ["V"]
+        },
+        {
+          "name": "Scones",
+          "price": "$9.50 - $11.50",
+          "description": "Serve of 2 freshly baked scones served warm with jam & cream.",
+          "dietary": ["V"],
+          "signature": true,
+          "outOfStock": true
+        }
+      ]
+    },
+    {
+      "id": "hot-drinks",
+      "name": "Hot Drinks",
+      "icon": "svg-coffee",
+      "availability": "Available 7:30 am - 2:29 pm",
+      "items": [
+        { "name": "Cappuccino", "price": "$5.00 - $7.00", "description": "Espresso base with textured milk and a dusting of chocolate.", "dietary": [] },
+        { "name": "Flat White", "price": "$5.00 - $7.00", "description": "Espresso base with smooth textured milk.", "dietary": [] },
+        { "name": "Latte", "price": "$5.00 - $7.00", "description": "Espresso base with microfoam served in a glass.", "dietary": [] },
+        { "name": "Piccolo Latte", "price": "$4.80", "description": "A single ristretto shot topped with warm milk in a demitasse glass.", "dietary": [] },
+        { "name": "Long Black", "price": "$4.80 - $7.00", "description": "Espresso pulled over hot water.", "dietary": [] },
+        { "name": "Short Black", "price": "$4.20", "description": "A single shot of concentrated espresso.", "dietary": [] },
+        { "name": "Macchiato", "price": "$4.20 - $4.80", "description": "Espresso stained with a dollop of frothy milk.", "dietary": [] },
+        { "name": "Mocha", "price": "$6.00 - $7.00", "description": "Espresso and rich cocoa powder blended with warm textured milk.", "dietary": [] },
+        { "name": "Chai Latte", "price": "$5.00 - $7.00", "description": "A sweetened blend of black tea, spices and steamed milk.", "dietary": [] },
+        { "name": "Dirty Chai Latte", "price": "$6.00 - $7.90", "description": "Our traditional Chai Latte reinforced with a shot of espresso.", "dietary": [] },
+        { "name": "Hot Chocolate", "price": "$5.30 - $6.90", "description": "Sweet milk chocolate blend steamed with milk.", "dietary": [] },
+        {
+          "name": "Italian Hot Chocolate",
+          "price": "$10.90",
+          "description": "From Milan, Italy - A traditional thick & rich hot chocolate served with cream.",
+          "dietary": ["V"],
+          "signature": true
+        },
+        {
+          "name": "Bailey's Hot Chocolate",
+          "price": "$13.90",
+          "description": "Traditional hot chocolate served in a tall glass with a shot of Bailey's liquor & topped with whipped cream. 18+, Available from 10am.",
+          "dietary": []
+        },
+        { "name": "Babyccino", "price": "$3.00", "description": "Frothy milk with cocoa dust served with 2 marshmallows.", "dietary": [] },
+        { "name": "Puppyccino", "price": "$2.00", "description": "Frothy milk served in a takeaway cup.", "dietary": ["DF"] },
+        { "name": "English Breakfast Tea", "price": "$6.00", "description": "Loose leaf tea pot for one.", "dietary": [] },
+        { "name": "Earl Grey Tea", "price": "$6.00", "description": "Loose leaf tea pot for one.", "dietary": [] },
+        { "name": "Irish Breakfast Tea", "price": "$6.00", "description": "Loose leaf tea pot for one.", "dietary": [] },
+        { "name": "Chai Tea", "price": "$7.50", "description": "Loose leaf tea pot for one served on milk with a side of honey.", "dietary": [] },
+        { "name": "Green Tea", "price": "$6.00", "description": "Loose leaf tea pot for one.", "dietary": [] },
+        { "name": "Peppermint Tea", "price": "$6.00", "description": "Loose leaf tea pot for one.", "dietary": [] },
+        { "name": "Lemongrass & Ginger Tea", "price": "$6.00", "description": "Loose leaf tea pot for one.", "dietary": [] }
+      ]
+    },
+    {
+      "id": "iced-drinks",
+      "name": "Iced Drinks",
+      "icon": "svg-iced",
+      "availability": "Available 7:30 am - 2:29 pm",
+      "items": [
+        { "name": "Mixed Berry Smoothie", "price": "$11.50", "description": "Real fruit mixed berry smoothie.", "dietary": ["V", "DF"] },
+        { "name": "Mango Smoothie", "price": "$11.50", "description": "Real fruit mango smoothie.", "dietary": ["V", "DF"] },
+        { "name": "Thick Shake", "price": "$10.90", "description": "Premium double-thick ice cream shake.", "dietary": ["V"] },
+        { "name": "Milkshake", "price": "$9.00", "description": "Traditional cold milk and syrup shake.", "dietary": ["V"] },
+        { "name": "Iced Chocolate", "price": "$9.50", "description": "Chilled chocolate milk topped with ice cream and cream.", "dietary": ["V"] },
+        { "name": "Iced Coffee", "price": "$9.50", "description": "House made iced coffee with ice cream & cream.", "dietary": ["V"] },
+        { "name": "Coffee Frappe", "price": "$9.50", "description": "Blended ice coffee, milk, and cream.", "dietary": ["V"] },
+        { "name": "Iced Latte", "price": "$6.70", "description": "Double shot coffee with ice and milk.", "dietary": [] },
+        { "name": "Iced Long Black", "price": "$6.00", "description": "Double shot espresso poured over cold water and ice.", "dietary": ["DF"] },
+        { "name": "Iced Chai Latte", "price": "$7.00", "description": "Chilled chai blend with cold milk and ice.", "dietary": [] }
+      ]
+    },
+    {
+      "id": "soft-drinks",
+      "name": "Soft Drinks",
+      "icon": "svg-soda",
+      "availability": "Available 7:30 am - 2:29 pm",
+      "items": [
+        { "name": "Coke", "price": "$5.90", "description": "Traditional carbonated soft drink.", "dietary": [] },
+        { "name": "Coke no sugar", "price": "$5.90", "description": "Sugar-free Coca Cola formulation.", "dietary": [] },
+        { "name": "Diet Coke", "price": "$5.90", "description": "Light calorie Diet Coke formulation.", "dietary": [] },
+        { "name": "Lemon, lime & bitters", "price": "$7.50", "description": "Lemonade, fresh lemon & lime, lime syrup, angostura bitters.", "dietary": ["V"] },
+        { "name": "Lemonade", "price": "$5.90", "description": "Cold, bubbly lemon soda.", "dietary": [] },
+        { "name": "Ginger Beer", "price": "$6.10", "description": "Bundaberg brewed ginger beer.", "dietary": [] },
+        { "name": "Diet Ginger Beer", "price": "$6.10", "description": "Diet Bundaberg ginger beer.", "dietary": [] },
+        { "name": "Sarsaparilla", "price": "$5.30", "description": "Classic root-brewed sarsaparilla.", "dietary": [] },
+        { "name": "San Pellegrino", "price": "$5.90 - $11.90", "description": "Premium sparkling mineral water.", "dietary": ["DF"] },
+        { "name": "Lipton Iced Tea", "price": "$4.90 - $6.90", "description": "Peach or lemon iced tea brew.", "dietary": [] },
+        { "name": "Creaming Soda", "price": "$6.10", "description": "Old style red creaming soda.", "dietary": [] },
+        { "name": "Blood Orange", "price": "$6.10", "description": "Premium blood orange soda.", "dietary": [] },
+        { "name": "Pink Grapefruit", "price": "$6.10", "description": "Tart and refreshing pink grapefruit soda.", "dietary": [] },
+        { "name": "Orange Juice", "price": "$6.50", "description": "Chilled orange juice.", "dietary": ["DF"] },
+        { "name": "Pineapple Juice", "price": "$6.50", "description": "Chilled pineapple juice.", "dietary": ["DF"] },
+        { "name": "Apple Juice", "price": "$6.50", "description": "Chilled apple juice.", "dietary": ["DF"] },
+        { "name": "Tropical Juice", "price": "$8.70", "description": "Mountain Fresh tropical fruit juice blend.", "dietary": ["DF"] },
+        { "name": "Apple & Mango Juice", "price": "$8.70", "description": "Mountain Fresh apple and mango blend.", "dietary": ["DF"] },
+        { "name": "Apple & Guava Juice", "price": "$8.70", "description": "Mountain Fresh apple and guava blend.", "dietary": ["DF"] },
+        { "name": "Mango Frappe", "price": "$9.50", "description": "Blended mango pulp frappe.", "dietary": ["DF"] },
+        { "name": "Kids Smoothie", "price": "$7.00", "description": "Children sized mango or mixed berry smoothie served in a takeaway cup.", "dietary": ["V"] },
+        { "name": "Kids orange juice", "price": "$4.80", "description": "Kids juice served in a takeaway cup.", "dietary": ["DF"] },
+        { "name": "Kids Apple Juice", "price": "$4.80", "description": "Kids Apple Juice served in a takeaway cup.", "dietary": ["DF"] },
+        { "name": "Kids pineapple juice", "price": "$4.80", "description": "Kids juice served in a takeaway cup.", "dietary": ["DF"] }
+      ]
+    },
+    {
+      "id": "childrens-drinks",
+      "name": "Kids Drinks",
+      "icon": "svg-child",
+      "availability": "Available All Day",
+      "items": [
+        { "name": "Babyccino", "price": "$3.00", "description": "Babyccino with 2 marshmallows", "dietary": [] },
+        { "name": "Kids Apple Juice", "price": "$4.80", "description": "Kids Apple Juice served in a Takeaway cup", "dietary": ["DF"] },
+        { "name": "Kids orange juice", "price": "$4.80", "description": "Kids juice served in a take away cup", "dietary": ["DF"] },
+        { "name": "Kids pineapple juice", "price": "$4.80", "description": "Kids juice served in take away cup", "dietary": ["DF"] },
+        { "name": "Kids Milkshake", "price": "$4.80", "description": "Kids milkshake served in take away cup", "dietary": [] },
+        { "name": "Kids Smoothie", "price": "$7.00", "description": "Children sized mango or mixed berry smoothie served in a take away cup", "dietary": ["V"] }
+      ]
+    }
+  ]
+}

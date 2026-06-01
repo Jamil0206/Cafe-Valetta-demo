@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Browse Cafe Valetta's digital table menu. Artisan coffee, signature scones, and fresh local breakfast dishes in Toowoomba's historic summer residence.">
+  <title>Cafe Valetta | Digital Table Menu</title>
+  
+  <!-- Styles & Fonts -->
+  <link rel="stylesheet" href="./src/index.css">
+  
+  <!-- JSON-LD Structured Data for Local Restaurant Menu SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Cafe Valetta",
+      "image": "./src/assets/valetta_hero.png",
+      "telephone": "+61 7 4632 0332",
+      "url": "https://cafe-valetta.square.site",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "96 Margaret St",
+        "addressLocality": "Toowoomba",
+        "addressRegion": "QLD",
+        "postalCode": "4350",
+        "addressCountry": "AU"
+      },
+      "menu": "https://cafe-valetta.square.site",
+      "servesCuisine": ["Australian", "High Tea", "Artisan Coffee"]
+    }
+  </script>
+</head>
+<body class="qr-menu-body">
+
+  <!-- Top Table Info Banner -->
+  <div class="announcement-bar table-banner" id="announcement-bar">
+    <p>✨ Welcome to Cafe Valetta. Order at the counter or with your server. ✨</p>
+  </div>
+
+  <!-- Sticky Mobile Header -->
+  <header class="main-header qr-header glass-panel" id="main-header">
+    <div class="header-container qr-header-container">
+      <div class="header-logo qr-logo">
+        <h1 class="logo-text">Cafe Valetta</h1>
+        <span class="logo-sub">Digital Table Menu</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="qr-menu-main">
+    <div class="container qr-container">
+      
+      <!-- Welcome Instruction Card -->
+      <section class="welcome-section reveal-on-scroll active">
+        <div class="welcome-card">
+          <p>Please browse our selection of seasonal hot drinks, iced treats, breakfasts, and home-baked pastries. Select any item to view photos and full descriptions.</p>
+        </div>
+      </section>
+
+      <!-- Sticky Category Selector Bar -->
+      <section class="menu-nav-section">
+        <div class="menu-category-container qr-nav-container">
+          <div class="menu-category-bar" id="menu-category-bar">
+            <!-- Dynamically populated categories -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Dietary Filters -->
+      <section class="filters-section">
+        <div class="dietary-filter-bar qr-filter-bar" id="dietary-filter-bar">
+          <span class="filter-label">Filter:</span>
+          <button class="dietary-btn" data-filter="V">
+            <span class="filter-dot"></span> Vegetarian (V)
+          </button>
+          <button class="dietary-btn" data-filter="DF">
+            <span class="filter-dot"></span> Dairy-Free (DF)
+          </button>
+        </div>
+      </section>
+
+      <!-- Menu Catalog Display Area -->
+      <section class="catalog-section">
+        <div class="category-title-banner" id="category-title-banner">
+          <h2 id="active-category-title">Category Name</h2>
+          <p id="active-category-availability" class="category-availability">Available 7:30 am - 11:15 am</p>
+        </div>
+        <div class="menu-display-area" id="menu-display-area">
+          
+          <!-- Signature Highlights -->
+          <div class="signature-highlight-container" id="signature-highlight-container">
+            <!-- Dynamically populated house signatures -->
+          </div>
+
+          <!-- Dot-Leader List (1 Column for Mobile) -->
+          <div class="menu-grid qr-menu-grid" id="menu-grid">
+            <!-- Dynamically populated general dishes -->
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Animated Text Marquee -->
+  <div class="marquee-container qr-marquee">
+    <div class="marquee-content">
+      HISTORIC COTTAGE • HIGH TEA • RECREATIONAL GARDENS • ARTISAN COFFEE • EST. 1911 • HISTORIC COTTAGE • HIGH TEA • RECREATIONAL GARDENS • ARTISAN COFFEE • EST. 1911 •
+    </div>
+  </div>
+
+  <!-- Minimal Mobile Footer -->
+  <footer class="site-footer qr-footer">
+    <div class="container footer-content-qr">
+      <h3 class="serif-text">Cafe Valetta</h3>
+      <p class="qr-footer-desc">Historic Cottage Dining • Est. 1911</p>
+      
+      <div class="qr-footer-info">
+        <p><strong>Hours:</strong> Mon - Sat: 9:00 AM - 5:00 PM | Sun: Closed</p>
+        <p><strong>Address:</strong> 96 Margaret St, Toowoomba City</p>
+        <p><strong>Phone:</strong> <a href="tel:+61746320332">+61 7 4632 0332</a></p>
+      </div>
+
+      <div class="payment-logos qr-pay-logos">
+        <img src="./src/assets/visa.svg" alt="Visa" class="pay-logo">
+        <img src="./src/assets/mastercard.svg" alt="Mastercard" class="pay-logo">
+        <img src="./src/assets/americanexpress.svg" alt="American Express" class="pay-logo">
+        <img src="./src/assets/applepay.svg" alt="Apple Pay" class="pay-logo">
+        <img src="./src/assets/googlepay.svg" alt="Google Pay" class="pay-logo">
+      </div>
+      
+      <p class="qr-copyright">&copy; 2026 Cafe Valetta. Table Menu Experience.</p>
+    </div>
+  </footer>
+
+  <!-- Dish Details Popup Modal -->
+  <div class="dish-modal" id="dish-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="dish-modal-content qr-modal-content">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close details">&times;</button>
+      <div class="modal-body qr-modal-body">
+        <div class="modal-image-wrapper qr-modal-image-wrapper">
+          <img id="modal-image" src="" alt="Dish Detail">
+        </div>
+        <div class="modal-info qr-modal-info">
+          <span class="modal-category" id="modal-category">Breakfast</span>
+          <h3 id="modal-title" class="serif-text">Dish Name</h3>
+          <span class="modal-price" id="modal-price">$0.00</span>
+          <p id="modal-description">Detailed description here.</p>
+          <div class="modal-dietary" id="modal-dietary">
+            <!-- Dietary Badges -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Controller -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
